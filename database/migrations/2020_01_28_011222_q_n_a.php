@@ -15,7 +15,7 @@ class QNA extends Migration
     {
         Schema::create('qna', function (Blueprint $table) {
             $table->string('jenis');
-            $table->string('pertanyaa');
+            $table->string('pertanyaan');
             $table->string('jawaban');
             $table->timestamps();
         });
