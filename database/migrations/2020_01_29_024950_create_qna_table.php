@@ -15,9 +15,9 @@ class CreateQnaTable extends Migration
     {
         Schema::create('qna', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('jenis');
-            $table->string('pertanyaan');
-            $table->string('jawaban');
+            $table->enum('jenis', array('Pasang Baru', 'Tambah Daya', 'Pesta'));
+            $table->string('pertanyaan',500);
+            $table->string('jawaban',500);
             $table->timestamps();
         });
     }
