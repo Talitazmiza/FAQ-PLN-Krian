@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class QNA extends Migration
+class CreateQnaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,6 +14,7 @@ class QNA extends Migration
     public function up()
     {
         Schema::create('qna', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->string('jenis');
             $table->string('pertanyaan');
             $table->string('jawaban');
@@ -28,6 +29,6 @@ class QNA extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('qna');
     }
 }

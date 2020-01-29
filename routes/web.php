@@ -24,3 +24,5 @@ Route::get('/admin', 'AdminController@index');
 Route::get('/showData', function () {
     return view('admin/showData');
 });
+
+Route::resource('qna', 'QNAController');

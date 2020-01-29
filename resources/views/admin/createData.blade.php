@@ -15,6 +15,7 @@
         </ul>
       </div><br/>
     @endif
+      <form method="post" action="{{ route('qna.store') }}">
         @csrf
           <div class="form-group">
               <label>Jenis</label>
