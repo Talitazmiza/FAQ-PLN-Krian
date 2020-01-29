@@ -14,7 +14,8 @@ class QNAController extends Controller
      */
     public function index()
     {
-        //
+        $qna = Qna::all();
+        return view('admin/showData', compact('qna'));
     }
 
     /**
