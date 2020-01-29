@@ -1,5 +1,5 @@
 @extends('admin/index')
 
 @section('content')
-    <p>BEEHASIL</p>
+    <p>BERHASIL</p>
 @endsection
