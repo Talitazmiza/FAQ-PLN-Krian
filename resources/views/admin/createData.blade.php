@@ -19,9 +19,11 @@
           <div class="form-group">
               <label>Jenis</label>
               <div class="form-group">
-                <input type="radio" name="jenis" value="pasangBaru"> Pasang Baru<br>
-                <input type="radio" name="jenis" value="tambahDaya"> Tambah Daya <br>
-                <input type="radio" name="jenis" value="pesta"> Pesta
+                <select name="jenis">
+                  <option value="Pasang Baru">Pasang Baru</option>
+                  <option value="Tambah Daya">Tambah Daya</option>
+                  <option value="Pesta">Pesta</option>
+                </select>
               </div>
           </div>
           <div class="form-group">
