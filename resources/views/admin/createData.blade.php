@@ -1,20 +1,28 @@
 @extends('admin/index')
 
+
+@section('judul')
+    <p>Create Data</p>
+@endsection
+
+
 @section('content')
-<div class="card uper">
-  <div class="card-header">
-    Form Tambah Data
-  </div>
-  <div class="card-body">
-    @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-            @endforeach
-        </ul>
+  @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+    </div><br/>
+  @endif
+  @if(session()->get('successCreateData'))
+      <div class="alert alert-success">
+      {{ session()->get('successCreateData') }}  
       </div><br/>
-    @endif
+  @endif
+<div class="card uper">
+  <div class="card-body">
       <form method="post" action="{{ route('qna.store') }}">
         @csrf
           <div class="form-group">

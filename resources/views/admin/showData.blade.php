@@ -1,16 +1,21 @@
 @extends('admin/index')
 
+@section('judul')
+    <p>Show Data</p>
+@endsection
+
 @section('content')
-<<<<<<< HEAD
-    <p>BERHASIL</p>
-=======
-    @if(session()->get('success'))
+    @if(session()->get('successUpdate'))
         <div class="alert alert-success">
-        {{ session()->get('success') }}  
+        {{ session()->get('successUpdate') }}  
         </div><br/>
     @endif
-    <h1>Selamat Datang di CRUD Laravel 6</h1>
-    <a href="{{ route('qna.create')}}" class="btn btn-primary">Tambah</a></td><br><br>
+    @if(session()->get('successDelete'))
+        <div class="alert alert-success">
+        {{ session()->get('successDelete') }}  
+        </div><br/>
+    @endif
+    <a href="{{ route('qna.create')}}" class="btn btn-primary">Tambah Data</a></td><br><br>
     <table class="table table-striped border text-center">
         <thead>
             <tr>
@@ -28,11 +33,16 @@
                 <td>{{$qnashow->jenis}}</td>
                 <td>{{$qnashow->pertanyaan}}</td>
                 <td>{{$qnashow->jawaban}}</td>
-                <td></td>
-                <td></td>
+                <td><a href="{{ route('qna.edit', $qnashow->id) }}" class="btn btn-warning">Edit</a></td>
+                <td>
+                <form action="{{ route('qna.destroy', $qnashow->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+                </td>
             </tr>
             @endforeach
         </tbody>
     </table>
->>>>>>> 801dec7c73d515d04934ce6f558a8e5a7436b322
 @endsection

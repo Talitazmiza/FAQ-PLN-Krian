@@ -43,7 +43,7 @@ class QNAController extends Controller
         ]);
         $qna = Qna::create($validasi);
 
-        return redirect('admin')->with('success', 'Data berhasil ditambah !');
+        return redirect('/createData')->with('successCreateData', 'Data berhasil ditambah !');
     }
 
     /**
@@ -65,7 +65,7 @@ class QNAController extends Controller
      */
     public function edit(Qna $qna)
     {
-        //
+        return view('admin.edit', compact('qna'));
     }
 
     /**
@@ -75,9 +75,16 @@ class QNAController extends Controller
      * @param  \App\Qna  $qna
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Qna $qna)
+    public function update(Request $request, $id)
     {
-        //
+        $validasi = $request->validate([
+            'jenis' => 'required',
+            'pertanyaan' => 'required',
+            'jawaban' => 'required'
+        ]);
+        Qna::whereId($id)->update($validasi);
+
+        return redirect('/showData')->with('successUpdate', 'Data berhasil di update !');
     }
 
     /**
@@ -86,8 +93,11 @@ class QNAController extends Controller
      * @param  \App\Qna  $qna
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Qna $qna)
+    public function destroy($id)
     {
-        //
+        $qna = Qna::findOrFail($id);
+        $qna->delete();
+
+        return redirect('/showData')->with('successDelete', 'Data berhasil dihapus !');
     }
 }
