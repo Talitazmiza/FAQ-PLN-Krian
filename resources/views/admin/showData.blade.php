@@ -35,11 +35,11 @@
                 <td>{{$qnashow->jawaban}}</td>
                 <td><a href="{{ route('qna.edit', $qnashow->id) }}" class="btn btn-warning">Edit</a></td>
                 <td>
-                <form action="{{ route('qna.destroy', $qnashow->id)}}" method="post">
-                    @csrf
-                    @method('DELETE')
-                    <button class="btn btn-danger" type="submit">Delete</button>
-                </form>
+                    <form action="{{ route('qna.destroy', $qnashow->id)}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger" type="submit">Delete</button>
+                    </form>
                 </td>
             </tr>
             @endforeach
