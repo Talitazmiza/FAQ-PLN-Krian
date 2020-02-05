@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function getLogin () {
-        return view('login');
+        return view('admin/createData');
     }
 
     public function postLogin(Request $request) {
