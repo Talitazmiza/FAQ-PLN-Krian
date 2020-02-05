@@ -28,3 +28,6 @@ Route::resource('qna', 'QNAController');
 Route::get('/editData', 'QNAController@edit');
 
 Route::get('/createData', 'QNAController@create');
+
+Route::get('/login', 'AdminController@getLogin');
+Route::post('/login', 'AdminController@postLogin')->name('post.login');
