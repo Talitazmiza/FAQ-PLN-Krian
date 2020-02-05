@@ -11,6 +11,6 @@ class AdminController extends Controller
     }
 
     public function postLogin(Request $request) {
-        dd('Login OK');
+        dd('Login OK'); //untuk post login
     }
 }
