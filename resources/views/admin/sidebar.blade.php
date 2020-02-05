@@ -36,7 +36,7 @@
               <li class="nav-item">
                 <a href="/showData" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tampilkan QNA</p>
+                  <p>Sunting QNA</p>
                 </a>
               </li>
             </ul>
