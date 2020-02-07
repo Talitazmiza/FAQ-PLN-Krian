@@ -165,7 +165,7 @@
 		<div class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
 		<li class="">
-		<a href="/admin">Admin</a> </li>
+		<a href="{{ route ('get.login') }}">Admin</a> </li>
 		<li class="">
 		<a href="/media/siaran-pers">Media</a> </li>
 		<li class="">

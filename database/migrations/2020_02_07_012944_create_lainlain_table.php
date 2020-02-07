@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQnaTable extends Migration
+class CreateLainlainTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateQnaTable extends Migration
      */
     public function up()
     {
-        Schema::create('qna', function (Blueprint $table) {
+        Schema::create('lainlain', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->enum('jenis', array('Pasang Baru', 'Pesta', 'Perubahan Daya', 'Balik Nama', 'Geser Meter/Geser Tiang/Geser SR'));
-            $table->string('pertanyaan',500);
-            $table->string('jawaban',500);
+            $table->string('images', 10);
+            $table->string('keterangan', 255);
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateQnaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('qna');
+        Schema::dropIfExists('lainlain');
     }
 }

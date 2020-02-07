@@ -13,7 +13,7 @@ class AdminSeeder extends Seeder
     {
         \App\Admin::insert([
             'name' => 'Admin',
-            'password' => bcrypt('adminulpkrian123')
+            'password' => 'password'
         ]);
     }
 }

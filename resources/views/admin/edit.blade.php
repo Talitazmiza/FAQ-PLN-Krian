@@ -27,20 +27,42 @@
                 @if ($qna->jenis == 'Pasang Baru')
                     <select name="jenis">
                         <option value="Pasang Baru">Pasang Baru</option>
-                        <option value="Tambah Daya">Tambah Daya</option>
+                        <option value="Perubahan Daya">Perubahan Daya</option>
+                        <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
+                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
                     </select>
-                @elseif ($qna->jenis == 'Tambah Daya')
+                @elseif ($qna->jenis == 'Perubahan Daya')
                     <select name="jenis">
                         <option value="Pasang Baru">Pasang Baru</option>
-                        <option value="Tambah Daya">Tambah Daya</option>
+                        <option value="Perubahan Daya">Perubahan Daya</option>
+                        <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
+                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                    </select>
+                @elseif ($qna->jenis == 'Balik Nama')
+                <select name="jenis">
+                    <option value="Pasang Baru">Pasang Baru</option>
+                    <option value="Perubahan Daya">Perubahan Daya</option>
+                    <option value="Balik Nama">Balik Nama</option>
+                    <option value="Pesta">Pesta</option>
+                    <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                </select>
+                @elseif ($qna->jenis == 'Pesta')
+                    <select name="jenis">
+                        <option value="Pasang Baru">Pasang Baru</option>
+                        <option value="Perubahan Daya">Perubahan Daya</option>
+                        <option value="Balik Nama">Balik Nama</option>
+                        <option value="Pesta">Pesta</option>
+                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
                     </select>
                 @else
                     <select name="jenis">
                         <option value="Pasang Baru">Pasang Baru</option>
-                        <option value="Tambah Daya">Tambah Daya</option>
+                        <option value="Perubahan Daya">Perubahan Daya</option>
+                        <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
+                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
                     </select>
                 @endif
             </div>
