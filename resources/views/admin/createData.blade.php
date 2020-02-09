@@ -30,8 +30,10 @@
               <div class="form-group">
                 <select name="jenis">
                   <option value="Pasang Baru">Pasang Baru</option>
-                  <option value="Tambah Daya">Tambah Daya</option>
+                  <option value="Perubahan Daya">Perubahan Daya</option>
+                  <option value="Balik Nama">Balik Nama</option>
                   <option value="Pesta">Pesta</option>
+                  <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
                 </select>
               </div>
           </div>

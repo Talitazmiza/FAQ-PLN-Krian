@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin', 'AdminController@getLogin');
+//Route::get('/admin', 'AdminController@getLogin');
 
 Route::get('/showData', 'QNAController@index');
 
@@ -29,7 +29,7 @@ Route::get('/editData', 'QNAController@edit');
 
 Route::get('/createData', 'QNAController@create');
 
-Route::get('/login', 'AdminController@getLogin');
+Route::get('/login', 'AdminController@getLogin')->name('get.login');
 Route::post('/login', 'AdminController@postLogin')->name('post.login');
 
 Route::get('/upload', 'QNAController@uploadfile');
