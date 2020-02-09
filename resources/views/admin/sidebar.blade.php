@@ -40,6 +40,14 @@
                 </a>
               </li>
             </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/upload" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lain-lain</p>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

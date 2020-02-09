@@ -31,3 +31,6 @@ Route::get('/createData', 'QNAController@create');
 
 Route::get('/login', 'AdminController@getLogin');
 Route::post('/login', 'AdminController@postLogin')->name('post.login');
+
+Route::get('/upload', 'QNAController@uploadfile');
+

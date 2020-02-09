@@ -167,24 +167,24 @@
 		<li class="">
 		<a href="/admin">Admin</a> </li>
 		<li class="">
-		<a href="/media/siaran-pers">Media</a> </li>
+		<a href="/media/siaran-pers"></a> </li>
 		<li class="">
-		<a href="/stakeholder/laporan-keuangan">Hubungan Investor</a> </li>
+		<a href="/stakeholder/laporan-keuangan"></a> </li>
 		<li class="">
-		<a href="/tentang-kami/profil-perusahaan">Tentang Kami</a> </li>
+		<a href="/tentang-kami/profil-perusahaan"></a> </li>
 		</ul>
 		<div class="pull-right">
 		<ul class="nav navbar-nav navbar-small">
 		<li class="dropdown">
-		<a href="/pln-peduli/pln-peduli-index">PLN Peduli</a> </li>
+		<a href="/pln-peduli/pln-peduli-index"></a> </li>
 		<li class="dropdown">
-		<a href="/kip/layanan-informasi-publik">KIP</a> </li>
+		<a href="/kip/layanan-informasi-publik"></a> </li>
 		<li class="dropdown">
-		<a href="/karier/informasi-rekrutmen-pln">Karier</a> </li>
+		<a href="/karier/informasi-rekrutmen-pln"></a> </li>
 		</ul>
 		<form class="navbar-form navbar-left" role="search" method="get" action="http://www.pln.co.id/search">
 		<div class="form-group">
-		<input name="q" type="text" class="form-control" placeholder="Cari...">
+		
 		</div>
 		<button type="submit" class="btn btn-default">
 		<i class="fa fa-search"></i>
@@ -192,13 +192,13 @@
 		</form>
 		<ul class="nav navbar-nav language">
 		<li class="text-right">
-		<a class="padding-right-5 disabled" title="Bahasa">ID</a>
+		<a class="padding-right-5 disabled" title="Bahasa"></a>
 		</li>
 		<li class="text-center">
-		<div class="language-divider">|</div>
+		<div class="language-divider"></div>
 		</li>
 		<li class="text-left">
-		<a class="padding-left-8" title="English" href="http://www.pln.co.id/eng">EN</a>
+		<a class="padding-left-8" title="English" href="http://www.pln.co.id/eng"></a>
 		</li>
 		</ul>
 		</div>

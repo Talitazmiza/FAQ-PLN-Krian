@@ -100,4 +100,8 @@ class QNAController extends Controller
 
         return redirect('/showData')->with('successDelete', 'Data berhasil dihapus !');
     }
+
+    public function uploadfile() {
+        return view('admin.upload');
+    }
 }
