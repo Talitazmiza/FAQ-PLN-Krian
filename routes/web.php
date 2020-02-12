@@ -23,8 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/showData', 'QNAController@index');
 
-Route::resource('qna', 'QNAController');
-
 Route::get('/editData', 'QNAController@edit');
 
 Route::get('/createData', 'QNAController@create');
