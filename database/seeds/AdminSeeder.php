@@ -11,9 +11,9 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        \App\Admin::insert([
+        \App\User::insert([
             'name' => 'Admin',
-            'password' => 'password'
+            'password' => bcrypt('password')
         ]);
     }
 }

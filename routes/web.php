@@ -29,7 +29,7 @@ Route::get('/editData', 'QNAController@edit');
 
 Route::get('/createData', 'QNAController@create');
 
-Route::get('/login', 'AdminController@getLogin')->name('get.login');
-Route::post('/login', 'AdminController@postLogin')->name('post.login');
+Route::get('/login', 'AuthController@getLogin')->name('get.login');
+Route::post('/login', 'AuthController@postLogin')->name('post.login');
 
 Route::get('/upload', 'QNAController@uploadfile');
