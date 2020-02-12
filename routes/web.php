@@ -17,6 +17,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('qna', 'QNAController');
+
 Route::get('/admin', 'AdminController@getLogin');
 
 Route::get('/showData', 'QNAController@index');
