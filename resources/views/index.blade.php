@@ -342,7 +342,7 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                     <div class="panel-heading" role="tab" id="headingTwo">
                         <h4 class="panel-title">
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="fa fa-link"></i>Pesta
+                                <i class="fa fa-link"></i>Penyambungan sementara
                             </a>
                         </h4>
                     </div>
