@@ -54,7 +54,7 @@ class QNAController extends Controller
      */
     public function show(Qna $qna)
     {
-        //
+        return view('index', compact('qna'));
     }
 
     /**

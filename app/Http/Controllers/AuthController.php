@@ -14,7 +14,7 @@ class AuthController extends Controller
         if(\Auth::attempt(['name' => $request->name, 'password' => $request->password])){
             return view('admin.createData');
         }else{
-            return 'gagal';
+            return view('login')->with('success', 'Gagal Login');
         }
     }
 }

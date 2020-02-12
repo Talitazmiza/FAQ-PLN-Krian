@@ -11,15 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'QNAController@show');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//Route::get('/admin', 'AdminController@getLogin');
+Route::get('/admin', 'AdminController@getLogin');
 
 Route::get('/showData', 'QNAController@index');
 
