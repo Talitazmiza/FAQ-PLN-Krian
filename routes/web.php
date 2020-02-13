@@ -31,3 +31,5 @@ Route::get('/login', 'AuthController@getLogin')->name('get.login');
 Route::post('/login', 'AuthController@postLogin')->name('post.login');
 
 Route::get('/upload', 'QNAController@uploadfile');
+
+Route::get('/showDataInfo/{jenis}', 'QNAController@process')->name('get.dataInfo');

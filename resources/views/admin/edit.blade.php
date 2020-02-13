@@ -30,7 +30,7 @@
                         <option value="Perubahan Daya">Perubahan Daya</option>
                         <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
-                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                        <option value="Geser">Geser Meter/Geser Tiang/Geser SR</option>
                     </select>
                 @elseif ($qna->jenis == 'Perubahan Daya')
                     <select name="jenis">
@@ -38,7 +38,7 @@
                         <option value="Perubahan Daya">Perubahan Daya</option>
                         <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
-                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                        <option value="Geser">Geser Meter/Geser Tiang/Geser SR</option>
                     </select>
                 @elseif ($qna->jenis == 'Balik Nama')
                 <select name="jenis">
@@ -46,7 +46,7 @@
                     <option value="Perubahan Daya">Perubahan Daya</option>
                     <option value="Balik Nama">Balik Nama</option>
                     <option value="Pesta">Pesta</option>
-                    <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                    <option value="Geser">Geser Meter/Geser Tiang/Geser SR</option>
                 </select>
                 @elseif ($qna->jenis == 'Pesta')
                     <select name="jenis">
@@ -54,7 +54,7 @@
                         <option value="Perubahan Daya">Perubahan Daya</option>
                         <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
-                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                        <option value="Geser">Geser Meter/Geser Tiang/Geser SR</option>
                     </select>
                 @else
                     <select name="jenis">
@@ -62,7 +62,7 @@
                         <option value="Perubahan Daya">Perubahan Daya</option>
                         <option value="Balik Nama">Balik Nama</option>
                         <option value="Pesta">Pesta</option>
-                        <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                        <option value="Geser">Geser Meter/Geser Tiang/Geser SR</option>
                     </select>
                 @endif
             </div>

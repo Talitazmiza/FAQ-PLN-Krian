@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+<?php
+$qnaPasangBaru = DB::table('qna')->select('pertanyaan','jawaban')->where('jenis', 'Pasang Baru')->get();
+$qnaPesta = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Pesta')->get();
+$qnaPerubahanDaya = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Perubahan Daya')->get();
+$qnaBalikNama = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Balik Nama')->get();
+$qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser')->get();
+?>
+
+>>>>>>> 75e77b24bea9371005a5cc0df147806afc744297
 <!doctype html>
 <!DOCTYPE html>
 <html>
