@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -16,5 +17,9 @@ class AuthController extends Controller
         }else{
             return view('login')->with('success', 'Gagal Login');
         }
+    }
+
+    public function logout (Request $request) {
+        return redirect('/login');
     }
 }

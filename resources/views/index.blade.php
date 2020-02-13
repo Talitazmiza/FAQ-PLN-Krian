@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 $qnaPasangBaru = DB::table('qna')->select('pertanyaan','jawaban')->where('jenis', 'Pasang Baru')->get();
 $qnaPesta = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Pesta')->get();
@@ -8,7 +6,6 @@ $qnaBalikNama = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis'
 $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser')->get();
 ?>
 
->>>>>>> 75e77b24bea9371005a5cc0df147806afc744297
 <!doctype html>
 <!DOCTYPE html>
 <html>
@@ -312,31 +309,15 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                           <div class="panel-body">
                                              <div class="accordion">
-                                                <div class="accordion-item">
-                                                   <a>Bagaimana cara pengajuan pasang baru</a>
-                                                   <div class="content">
-                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                @foreach($qnaPasangBaru as $pasangBaru)
+                                                   <div class="accordion-item">
+                                                      <a>{{ $pasangBaru->pertanyaan }}</a>
+                                                      <div class="content">
+                                                         <p>{{ $pasangBaru->jawaban }}</p>
+                                                      </div>
                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                   <a>Apa saja persyaratan untuk pasang baru?</a>
-                                                   <div class="content">
-                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                                                   </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                   <a>Bagaimana prosedur cara pasang baru?</a>
-                                                   <div class="content">
-                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                                                   </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                   <a>Berapa biaya untuk pasang baru?</a>
-                                                   <div class="content">
-                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                                                   </div>
-                                                </div>
-                                             </div>
+                                                @endforeach
+                                             </div>   
                                           </div>
                                        </div>
                                     </div>
@@ -351,12 +332,14 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                           <div class="panel-body">
                                              <div class="accordion">
-                                                <div class="accordion-item">
-                                                   <a>Bagaimana prosedur perubahan daya?</a>
-                                                   <div class="content">
-                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                @foreach($qnaPerubahanDaya as $perubahanDaya)
+                                                   <div class="accordion-item">
+                                                      <a>{{ $perubahanDaya->pertanyaan }}</a>
+                                                      <div class="content">
+                                                         <p>{{ $perubahanDaya->jawaban }}</p>
+                                                      </div>
                                                    </div>
-                                                </div>
+                                                @endforeach
                                              </div>
                                           </div>
                                        </div>
@@ -372,12 +355,14 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                           <div class="panel-body">
                                              <div class="accordion">
-                                                <div class="accordion-item">
-                                                   <a>Bagaimana prosedur Penyambubngan Sementara?</a>
-                                                   <div class="content">
-                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                @foreach($qnaPesta as $pesta)
+                                                   <div class="accordion-item">
+                                                      <a>{{ $pesta->pertanyaan }}</a>
+                                                      <div class="content">
+                                                         <p>{{ $pesta->jawaban }}</p>
+                                                      </div>
                                                    </div>
-                                                </div>
+                                                @endforeach
                                              </div>
                                           </div>
                                        </div>
@@ -397,6 +382,52 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                                    <a>Ilustrasi alur SLO</a>
                                                 </div>
                                              </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                       <div class="panel-heading" role="tab" id="headingFive">
+                                          <h4 class="panel-title">
+                                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                             <i class="fa fa-comment"></i>Balik Nama
+                                             </a>
+                                          </h4>
+                                       </div>
+                                       <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                          <div class="panel-body">
+                                             <div class="accordion">
+                                                @foreach($qnaBalikNama as $balikNama)
+                                                   <div class="accordion-item">
+                                                      <a>{{ $balikNama->pertanyaan }}</a>
+                                                      <div class="content">
+                                                         <p>{{ $balikNama->jawaban }}</p>
+                                                      </div>
+                                                   </div>
+                                                @endforeach
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                       <div class="panel-heading" role="tab" id="headingSix">
+                                          <h4 class="panel-title">
+                                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                             <i class="fa fa-bars"></i>Geser Meter/Geser Tiang/Geser SR
+                                             </a>
+                                          </h4>
+                                       </div>
+                                       <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                          <div class="panel-body">
+                                             <div class="accordion">
+                                                @foreach($qnaGeser as $geser)
+                                                   <div class="accordion-item">
+                                                      <a>{{ $geser->pertanyaan }}</a>
+                                                      <div class="content">
+                                                         <p>{{ $geser->jawaban }}</p>
+                                                      </div>
+                                                   </div>
+                                                @endforeach
+                                             </div>   
                                           </div>
                                        </div>
                                     </div>

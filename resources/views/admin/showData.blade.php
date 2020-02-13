@@ -16,7 +16,10 @@
         {{ session()->get('successDelete') }}  
         </div><br/>
     @endif
-    <a href="{{ route('qna.create')}}" class="btn btn-primary">Tambah Data</a></td><br><br>
+        <a href="{{ route('qna.create')}}" class="btn btn-primary">Tambah Data</a></td><br><br>
+        <form method="post" action="{{ route('post.logout') }}">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Logout</button>
+        </form>
     @foreach($kind as $value)
         <a href="{{ route('get.dataInfo',$value) }}" class="btn btn-info">{{ $value }}</a>&nbsp&nbsp
     @endforeach
