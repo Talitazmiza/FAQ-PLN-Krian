@@ -20,7 +20,7 @@
             <a href="{{ route('logout')}}" class="btn btn-danger">Log Out</a>
         </span>
         <span style="float: left">
-            <h1>DASHBOARD</h1>
+            <h1>DASHBOARD {{ Auth::user()->name ?? '' }}</h1>
         </span>
 
         <br><br><br>

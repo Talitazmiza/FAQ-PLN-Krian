@@ -13,7 +13,7 @@ class AuthController extends Controller
 
     public function postLogin (Request $request) {
         if(\Auth::attempt(['name' => $request->name, 'password' => $request->password])){
-            return view('admin.showData');
+            return redirect()->route('qna.index');
         }else{
             return view('login')->with('success', 'Gagal Login');
         }
