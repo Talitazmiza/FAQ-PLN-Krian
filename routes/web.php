@@ -15,22 +15,18 @@ Route::get('/', 'QNAController@show');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('qna', 'QNAController')->middleware('auth');
 
-Route::resource('qna', 'QNAController');
+Route::get('/showData', 'QNAController@index')->middleware('auth');
 
-Route::get('/admin', 'AdminController@getLogin');
+Route::get('/editData', 'QNAController@edit')->middleware('auth');
 
-Route::get('/showData', 'QNAController@index');
+Route::get('/createData', 'QNAController@create')->middleware('auth');
 
-Route::get('/editData', 'QNAController@edit');
+Route::get('/login', 'AuthController@getLogin')->middleware('guest')->name('get.login');
+Route::post('/login', 'AuthController@postLogin')->middleware('guest')->name('post.login');
+Route::get('/logout', 'AuthController@logout')->middleware('auth')->name('logout');
 
-Route::get('/createData', 'QNAController@create');
+Route::get('/upload', 'QNAController@uploadfile')->middleware('auth');
 
-Route::get('/login', 'AuthController@getLogin')->name('get.login');
-Route::post('/login', 'AuthController@postLogin')->name('post.login');
-Route::get('/logout', 'AuthController@logout')->name('logout');
-
-Route::get('/upload', 'QNAController@uploadfile');
-
-Route::get('/showDataInfo/{jenis}', 'QNAController@process')->name('get.dataInfo');
+Route::get('/showDataInfo/{jenis}', 'QNAController@process')->middleware('auth')->name('get.dataInfo');

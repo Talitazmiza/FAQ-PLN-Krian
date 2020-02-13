@@ -158,15 +158,6 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                         <li class="">
                            <a href="{{ route ('get.login') }}">Admin</a> 
                         </li>
-                        <li class="">
-                           <a href="/media/siaran-pers"></a> 
-                        </li>
-                        <li class="">
-                           <a href="/stakeholder/laporan-keuangan"></a> 
-                        </li>
-                        <li class="">
-                           <a href="/tentang-kami/profil-perusahaan"></a> 
-                        </li>
                      </ul>
                      <div class="pull-right">
                         <ul class="nav navbar-nav navbar-small">
