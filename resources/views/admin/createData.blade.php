@@ -1,11 +1,6 @@
 @extends('admin/index')
 
 
-@section('judul')
-    <p>Create Data</p>
-@endsection
-
-
 @section('content')
   @if ($errors->any())
     <div class="alert alert-danger">
@@ -33,7 +28,7 @@
                   <option value="Perubahan Daya">Perubahan Daya</option>
                   <option value="Balik Nama">Balik Nama</option>
                   <option value="Pesta">Pesta</option>
-                  <option value="Geser Meter/Geser Tiang/Geser Sr">Geser Meter/Geser Tiang/Geser Sr</option>
+                  <option value="Geser">Geser Meter/Geser Tiang/Geser Sr</option>
                 </select>
               </div>
           </div>

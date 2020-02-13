@@ -12,7 +12,7 @@ class AuthController extends Controller
 
     public function postLogin (Request $request) {
         if(\Auth::attempt(['name' => $request->name, 'password' => $request->password])){
-            return view('admin.createData');
+            return view('admin.showData');
         }else{
             return view('login')->with('success', 'Gagal Login');
         }

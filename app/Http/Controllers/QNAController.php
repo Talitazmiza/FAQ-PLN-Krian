@@ -12,10 +12,11 @@ class QNAController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $qna = Qna::all();
-        return view('admin/showData', compact('qna'));
+        return view('admin/showDataInfo', compact('qna'));
     }
 
     /**
@@ -54,7 +55,7 @@ class QNAController extends Controller
      */
     public function show(Qna $qna)
     {
-        return view('index', compact('qna'));
+        return view ('index');
     }
 
     /**
@@ -98,10 +99,14 @@ class QNAController extends Controller
         $qna = Qna::findOrFail($id);
         $qna->delete();
 
-        return redirect('/showData')->with('successDelete', 'Data berhasil dihapus !');
+        return redirect()->back()->with('successDelete', 'Data berhasil dihapus !');
     }
 
     public function uploadfile() {
         return view('admin.upload');
+    }
+
+    public function process ($jenis) {
+        return view('admin/showDataInfo', compact('jenis'));
     }
 }

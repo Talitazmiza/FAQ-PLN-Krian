@@ -3,7 +3,7 @@ $qnaPasangBaru = DB::table('qna')->select('pertanyaan','jawaban')->where('jenis'
 $qnaPesta = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Pesta')->get();
 $qnaPerubahanDaya = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Perubahan Daya')->get();
 $qnaBalikNama = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Balik Nama')->get();
-$qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser Meter/Geser Tiang/Geser SR')->get();
+$qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser')->get();
 ?>
 
 <!doctype html>
