@@ -2,9 +2,9 @@
     $value = DB::table('qna')->select('id','jenis', 'pertanyaan', 'jawaban')->where('jenis', $jenis ?? '')->get();
 ?>
 
-@extends('admin/showData')
+@extends('admin.showCreateData')
 
-@section('showdata')
+@section('showdatainfo')
     <table class="table table-striped border text-center">
         <thead>
             <tr>

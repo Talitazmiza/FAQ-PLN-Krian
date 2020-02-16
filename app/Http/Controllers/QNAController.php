@@ -44,7 +44,7 @@ class QNAController extends Controller
         ]);
         $qna = Qna::create($validasi);
 
-        return redirect('/createData')->with('successCreateData', 'Data berhasil ditambah !');
+        return redirect()->route('qna.index')->with('successCreateData', 'Data berhasil ditambah !');
     }
 
     /**
@@ -85,7 +85,7 @@ class QNAController extends Controller
         ]);
         Qna::whereId($id)->update($validasi);
 
-        return redirect('/showData')->with('successUpdate', 'Data berhasil di update !');
+        return redirect()->route('qna.index')->with('successUpdate', 'Data berhasil di update !');
     }
 
     /**
