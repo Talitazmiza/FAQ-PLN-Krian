@@ -66,7 +66,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('upload') }}">
+            <a class="nav-link" href="{{ route('get.imageUpload') }}">
               <span data-feather="file-text"></span>
               Lain-lain
             </a>

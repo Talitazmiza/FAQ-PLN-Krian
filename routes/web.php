@@ -21,3 +21,7 @@ Route::post('/login', 'AuthController@postLogin')->middleware('guest')->name('po
 Route::get('/logout', 'AuthController@logout')->middleware('auth')->name('logout');
 Route::get('/upload', 'QNAController@uploadfile')->middleware('auth')->name('upload');
 Route::get('/showDataInfo/{jenis}', 'QNAController@process')->middleware('auth')->name('get.dataInfo');
+
+Route::get('/imageUpload', 'UploadImageController@index')->name('get.imageUpload');
+Route::post('/imageUpload', 'UploadImageController@upload')->name('post.imageUpload');
+Route::delete('/imageUpload/{id}', 'UploadImageController@destroy')->name('delete.imageUpload');
