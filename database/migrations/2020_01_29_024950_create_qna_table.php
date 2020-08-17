@@ -17,7 +17,7 @@ class CreateQnaTable extends Migration
             $table->bigIncrements('id');
             $table->enum('jenis', array('Pasang Baru', 'Pesta', 'Perubahan Daya', 'Balik Nama', 'Geser'));
             $table->string('pertanyaan',500);
-            $table->string('jawaban',500);
+            $table->string('jawaban',5000);
             $table->timestamps();
         });
     }

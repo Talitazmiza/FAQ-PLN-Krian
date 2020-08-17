@@ -1,4 +1,6 @@
-
+@extends('admin.index', ['search' => $search])
+<p>coba dong search data</p>
+@section('searchData')
     <table class="table table-striped border text-center">
         <thead>
             <tr>
@@ -26,4 +28,6 @@
             @endforeach
         </tbody>
     </table>
+@endsection
+
 

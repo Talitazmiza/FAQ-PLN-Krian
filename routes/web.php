@@ -17,7 +17,7 @@ Route::get('/', 'QNAController@show');
 Auth::routes();
 
 Route::resource('qna', 'QNAController')->middleware('auth');
-Route::get('/search', 'QnaController@search')->middleware('auth')->name('search.data');
+Route::get('/search', 'QNAController@search')->middleware('auth')->name('search.data');
 Route::get('/login', 'AuthController@getLogin')->middleware('guest')->name('get.login');
 Route::post('/login', 'AuthController@postLogin')->middleware('guest')->name('post.login');
 Route::get('/logout', 'AuthController@logout')->middleware('auth')->name('logout');
