@@ -46,7 +46,9 @@
   <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">PLN ULP KRIAN</a>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <form action="{{ route('search.data') }}" method="GET">
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search" name="search">
+  </form>
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
       <a class="btn btn-danger btn-danger" href="{{ route('logout') }}">Sign out</a>
@@ -81,7 +83,7 @@
       </div>
 
       <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
-      
+
       <!-- show data -->
       @yield('content')
       <!-- end show data -->

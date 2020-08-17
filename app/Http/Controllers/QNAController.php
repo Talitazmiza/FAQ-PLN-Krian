@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Qna;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class QNAController extends Controller
 {
@@ -108,5 +109,12 @@ class QNAController extends Controller
 
     public function process ($jenis) {
         return view('admin/showDataInfo', compact('jenis'));
+    }
+
+    public function search (Request $request)
+    {
+        $input = $request->search;
+        $search = DB::table('qna')->where('pertanyaan', 'like', "%" .$input. "%")->get();
+        return view('admin.searchData', compact('search'));
     }
 }
