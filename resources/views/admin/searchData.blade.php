@@ -1,6 +1,6 @@
 @extends('admin.index', ['search' => $search])
-<p>coba dong search data</p>
-@section('searchData')
+
+@section('content')
     <table class="table table-striped border text-center">
         <thead>
             <tr>

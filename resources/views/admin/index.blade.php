@@ -61,18 +61,24 @@
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="{{ route('qna.index') }}">
-              <span data-feather="users"></span>
-              QNA<span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('get.imageUpload') }}">
-              <span data-feather="file-text"></span>
-              Lain-lain
-            </a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="{{ route('qna.create') }}">
+                    <span data-feather="users"></span>
+                    Tambah Data<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('qna.index') }}">
+                    <span data-feather="users"></span>
+                    Sunting Data<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('get.imageUpload') }}">
+                    <span data-feather="file-text"></span>
+                    Upload Brosur
+                </a>
+            </li>
         </ul>
       </div>
     </nav>

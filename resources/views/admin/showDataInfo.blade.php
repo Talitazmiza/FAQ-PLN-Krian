@@ -1,10 +1,15 @@
 <?php
     $value = DB::table('qna')->select('id','jenis', 'pertanyaan', 'jawaban')->where('jenis', $jenis ?? '')->get();
+    $kind = ["Pasang Baru", "Perubahan Daya", "Balik Nama", "Pesta", "Geser"];
 ?>
 
-@extends('admin.showCreateData')
+@extends('admin.index')
 
-@section('showdatainfo')
+@section('content')
+    @foreach($kind as $k)
+        <a href="{{ route('get.dataInfo',$k) }}" class="btn btn-info">{{ $k }}</a>&nbsp&nbsp
+    @endforeach
+    <br><br>
     <table class="table table-striped border text-center">
         <thead>
             <tr>

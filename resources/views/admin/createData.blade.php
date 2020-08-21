@@ -2,7 +2,6 @@
 
 <?php
     $qna = DB::table('qna')->select('id', 'jenis', 'pertanyaan', 'jawaban')->get();
-    $kind = ["Pasang Baru", "Perubahan Daya", "Balik Nama", "Pesta", "Geser"];
 ?>
 
 @section('content')
@@ -18,7 +17,7 @@
     @endif
     @if(session()->get('successCreateData'))
         <div class="alert alert-success">
-        {{ session()->get('successCreateData') }}  
+        {{ session()->get('successCreateData') }}
         </div><br/>
     @endif
 
@@ -55,18 +54,15 @@
 
     @if(session()->get('successUpdate'))
         <div class="alert alert-success">
-    {{ session()->get('successUpdate') }}  
+    {{ session()->get('successUpdate') }}
         </div><br/>
     @endif
     @if(session()->get('successDelete'))
         <div class="alert alert-success">
-        {{ session()->get('successDelete') }}  
+        {{ session()->get('successDelete') }}
         </div><br/>
     @endif
 
-    @foreach($kind as $value)
-        <a href="{{ route('get.dataInfo',$value) }}" class="btn btn-info">{{ $value }}</a>&nbsp&nbsp
-    @endforeach
+
     <br><br>
-    @yield('showdatainfo')
 @endsection

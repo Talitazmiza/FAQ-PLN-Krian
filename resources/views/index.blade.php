@@ -156,19 +156,19 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                   <div class="collapse navbar-collapse">
                      <ul class="nav navbar-nav">
                         <li class="">
-                           <a href="{{ route ('get.login') }}">Admin</a> 
+                           <a href="{{ route ('get.login') }}">Admin</a>
                         </li>
                      </ul>
                      <div class="pull-right">
                         <ul class="nav navbar-nav navbar-small">
                            <li class="dropdown">
-                              <a href="/pln-peduli/pln-peduli-index"></a> 
+                              <a href="/pln-peduli/pln-peduli-index"></a>
                            </li>
                            <li class="dropdown">
-                              <a href="/kip/layanan-informasi-publik"></a> 
+                              <a href="/kip/layanan-informasi-publik"></a>
                            </li>
                            <li class="dropdown">
-                              <a href="/karier/informasi-rekrutmen-pln"></a> 
+                              <a href="/karier/informasi-rekrutmen-pln"></a>
                            </li>
                         </ul>
                         <form class="navbar-form navbar-left" role="search" method="get" action="http://www.pln.co.id/search">
@@ -193,7 +193,7 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                   </div>
                </div>
                <div class="col-xs-2">
-                  <a href="http://www.pln.co.id"><img src="http://www.pln.co.id/statics/img/logo-header-20170501a.jpg" alt="PT PLN (Persero)" title="PT PLN (Persero)"></a> 
+                  <a href="http://www.pln.co.id"><img src="http://www.pln.co.id/statics/img/logo-header-20170501a.jpg" alt="PT PLN (Persero)" title="PT PLN (Persero)"></a>
                </div>
                <div class="clearfix"></div>
             </div>
@@ -214,7 +214,7 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                      </div>
                      <div class="clearfix"></div>
                   </button>
-                  <a class="navbar-brand pull-right" href="http://www.pln.co.id"><img src="http://www.pln.co.id/statics/img/m-logo-pln.png" alt="PT PLN (Persero)" title="PT PLN (Persero)"></a> 
+                  <a class="navbar-brand pull-right" href="http://www.pln.co.id"><img src="http://www.pln.co.id/statics/img/m-logo-pln.png" alt="PT PLN (Persero)" title="PT PLN (Persero)"></a>
                </div>
                <div class="collapse navbar-collapse" id="mobile-main-menu">
                   <ul class="nav navbar-nav">
@@ -272,7 +272,7 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                  <input type="text" placeholder="Cari.." name="search">
                                  <button type="submit"><i class="fa fa-search"></i></button>
                               </form>
-                              </p> 
+                              </p>
                            </div>
                         </div>
                      </div>
@@ -308,7 +308,7 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                                       </div>
                                                    </div>
                                                 @endforeach
-                                             </div>   
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
@@ -418,7 +418,7 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
                                                       </div>
                                                    </div>
                                                 @endforeach
-                                             </div>   
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
@@ -438,12 +438,12 @@ $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'G
       <script type="text/javascript" href="js/util.js"></script>
       <script>
          const items = document.querySelectorAll(".accordion a");
-         
+
          function toggleAccordion(){
            this.classList.toggle('active');
            this.nextElementSibling.classList.toggle('active');
          }
-         
+
          items.forEach(item => item.addEventListener('click', toggleAccordion));
       </script>
    </body>
