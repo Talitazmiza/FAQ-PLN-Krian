@@ -56,7 +56,7 @@ class QNAController extends Controller
      */
     public function show(Qna $qna)
     {
-        return view ('index');
+        return view ('showDataInfo');
     }
 
     /**
@@ -116,5 +116,12 @@ class QNAController extends Controller
         $input = $request->search;
         $search = DB::table('qna')->where('pertanyaan', 'like', "%" .$input. "%")->get();
         return view('admin.searchData', compact('search'));
+    }
+
+    public function searchForLandingPage (Request $request)
+    {
+        $input = $request->search;
+        $search = DB::table('qna')->where('pertanyaan', 'like', "%" .$input. "%")->get();
+        return view('searchDataInfo', compact('search'));
     }
 }
