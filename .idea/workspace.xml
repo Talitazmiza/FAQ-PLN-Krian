@@ -2,20 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62d853ff-e80f-414b-9b87-1dd22929abc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo-header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/faq-krian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/faq-krian.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/showDataInfo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showDataInfo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="@talitazmiza" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="5010e0c7d7a11adf700d341eb6690f0cbeaaa050" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -119,6 +137,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talita\PhpstormProjects\new2" />
+      <recent name="C:\Users\talita\PhpstormProjects\new2\public\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talita\PhpstormProjects\new2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -137,16 +178,42 @@
       <option name="presentableId" value="Default" />
       <updated>1583050267029</updated>
       <workItem from="1583050280418" duration="80000" />
+      <workItem from="1598086153575" duration="2776000" />
+      <workItem from="1598097157678" duration="922000" />
+      <workItem from="1598163656669" duration="17079000" />
     </task>
+    <task id="LOCAL-00001" summary="back button login admin, logo pln, navbar, admin sign out ke landing page, responsive, kurang favicon">
+      <created>1598198495016</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598198495016</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="back button login admin, logo pln, navbar, admin sign out ke landing page, responsive, kurang favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="back button login admin, logo pln, navbar, admin sign out ke landing page, responsive, kurang favicon" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1583050283660">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="448" y="265" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1583050283660" />
+    <state x="448" y="265" key="com.intellij.ide.util.TipDialog" />
+    <state x="448" y="265" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" />
   </component>
 </project>

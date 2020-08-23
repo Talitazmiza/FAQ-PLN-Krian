@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', 'QNAController@show');
+Route::get('/', 'QNAController@show')->name ('get.index');
 
 Auth::routes();
 

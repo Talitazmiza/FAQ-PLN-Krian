@@ -11,6 +11,10 @@ class AuthController extends Controller
         return view ('login');
     }
 
+    public function getLogout () {
+        return view ('index');
+    }
+
     public function postLogin (Request $request) {
         if(\Auth::attempt(['name' => $request->name, 'password' => $request->password])){
             return redirect()->route('qna.index');
@@ -22,6 +26,6 @@ class AuthController extends Controller
     public function logout (Request $request) {
         \Auth::logout();
 
-        return redirect()->route('get.login');
+        return redirect()->route('get.index');
     }
 }
