@@ -152,8 +152,11 @@
                         <li class="">
                            <a href="{{ route ('get.login') }}">Admin</a>
                         </li>
+                        <li>
+                            <a href="{{ route('get.index') }}">Home</a>
+                        </li>
                      </ul>
-                     <div class="pull-right">
+                     {{-- <div class="pull-right">
                         <ul class="nav navbar-nav navbar-small">
                            <li class="dropdown">
                               <a href="/pln-peduli/pln-peduli-index"></a>
@@ -184,16 +187,16 @@
                            </li>
                         </ul>
                      </div>
-                  </div>
+                  </div> --}}
                </div>
-               <div class="col-xs-2">
+               {{-- <div class="col-xs-2">
                   <a href="http://www.pln.co.id"><img src="http://www.pln.co.id/statics/img/logo-header-20170501a.jpg" alt="PT PLN (Persero)" title="PT PLN (Persero)"></a>
-               </div>
-               <div class="clearfix"></div>
+               </div> --}}
+               {{-- <div class="clearfix"></div>
             </div>
          </nav>
-         <div class="clearfix"></div>
-         <nav id="m-main-menu" class="visible-xs-block visible-md-block visible-sm-block navbar navbar-default" role="navigation">
+         <div class="clearfix"></div> --}}
+         {{-- <nav id="m-main-menu" class="visible-xs-block visible-md-block visible-sm-block navbar navbar-default" role="navigation">
             <div class="container-fluid">
                <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#mobile-main-menu" aria-expanded="false">
@@ -244,13 +247,14 @@
                   </ul>
                </div>
             </div>
-         </nav>
-         <div class="container breadcrumb-wrapper">
+         </nav> --}}
+         {{-- <div class="container breadcrumb-wrapper">
             <div class="row">
                <div class="col-lg-9 col-md-12">
                </div>
             </div>
-         </div>
+         </div> --}}
+
       </header>
       <div class="content-wrapper">
          <div class="content-wrapper homepage">

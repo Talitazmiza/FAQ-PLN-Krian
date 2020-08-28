@@ -121,7 +121,7 @@ class QNAController extends Controller
     public function searchForLandingPage (Request $request)
     {
         $input = $request->search;
-        $search = DB::table('qna')->where('pertanyaan', 'like', "%" .$input. "%")->get();
+        $search = DB::table('qna')->where('pertanyaan', 'like', "%" .$input. "%")->orWhere('jawaban', 'like', "%" .$input. "%")->get();
         return view('searchDataInfo', compact('search'));
     }
 }
