@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62d853ff-e80f-414b-9b87-1dd22929abc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo-header.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/faq-krian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/faq-krian.iml" afterDir="false" />
+    <list default="true" id="62d853ff-e80f-414b-9b87-1dd22929abc0" name="Default Changelist" comment="logo, kategori lain2, bersih2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/showDataInfo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showDataInfo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +205,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="back button login admin, logo pln, navbar, admin sign out ke landing page, responsive, kurang favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="back button login admin, logo pln, navbar, admin sign out ke landing page, responsive, kurang favicon" />
+    <MESSAGE value="logo, kategori lain2, bersih2" />
+    <option name="LAST_COMMIT_MESSAGE" value="logo, kategori lain2, bersih2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="448" y="265" key="com.intellij.ide.util.TipDialog" />

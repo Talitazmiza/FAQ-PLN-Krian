@@ -152,6 +152,29 @@
                                   </div>
                               </div>
                           </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingSeven">
+                                  <h4 class="panel-title">
+                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                          <i class="fa fa-comment"></i>Lain-lain
+                                      </a>
+                                  </h4>
+                              </div>
+                              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                  <div class="panel-body">
+                                      <div class="accordion">
+{{--                                          @foreach($qnaGeser as $geser)--}}
+{{--                                              <div class="accordion-item">--}}
+{{--                                                  <a>{{ $geser->pertanyaan }}</a>--}}
+{{--                                                  <div class="content">--}}
+{{--                                                      <p>{{ $geser->jawaban }}</p>--}}
+{{--                                                  </div>--}}
+{{--                                              </div>--}}
+{{--                                          @endforeach--}}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
                    </div>
                 </div>
