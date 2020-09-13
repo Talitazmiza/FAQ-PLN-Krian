@@ -31,10 +31,10 @@
                                   <div class="panel-body">
                                       <div class="accordion">
                                           @foreach($qnaPasangBaru as $pasangBaru)
-                                              <div class="accordion-item">
-                                                  <a>{{ $pasangBaru->pertanyaan }}</a>
-                                                  <div class="content">
-                                                      <p>{{ $pasangBaru->jawaban }}</p>
+                                              <div class="accordion-item  ">
+                                                  <a style="color: black">{{ $pasangBaru->pertanyaan }}</a>
+                                                  <div class="content  ">
+                                                      <p style="color: black">{{ $pasangBaru->jawaban }}</p>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -54,10 +54,10 @@
                                   <div class="panel-body">
                                       <div class="accordion">
                                           @foreach($qnaPerubahanDaya as $perubahanDaya)
-                                              <div class="accordion-item">
-                                                  <a>{{ $perubahanDaya->pertanyaan }}</a>
-                                                  <div class="content">
-                                                      <p>{{ $perubahanDaya->jawaban }}</p>
+                                              <div class="accordion-item  ">
+                                                  <a style="color: black">{{ $perubahanDaya->pertanyaan }}</a>
+                                                  <div class="content  ">
+                                                      <p style="color: black">{{ $perubahanDaya->jawaban }}</p>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -77,10 +77,10 @@
                                   <div class="panel-body">
                                       <div class="accordion">
                                           @foreach($qnaPesta as $pesta)
-                                              <div class="accordion-item">
-                                                  <a>{{ $pesta->pertanyaan }}</a>
-                                                  <div class="content">
-                                                      <p>{{ $pesta->jawaban }}</p>
+                                              <div class="accordion-item  ">
+                                                  <a style="color: black">{{ $pesta->pertanyaan }}</a>
+                                                  <div class="content  ">
+                                                      <p style="color: black">{{ $pesta->jawaban }}</p>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -99,7 +99,7 @@
                               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                   <div class="panel-body">
                                       <div class="accordion">
-                                          <div class="accordion-item">
+                                          <div class="accordion-item  ">
                                               <a>Ilustrasi alur SLO</a>
                                           </div>
                                       </div>
@@ -118,10 +118,10 @@
                                <div class="panel-body">
                                   <div class="accordion">
                                      @foreach($qnaBalikNama as $balikNama)
-                                        <div class="accordion-item">
-                                           <a>{{ $balikNama->pertanyaan }}</a>
-                                           <div class="content">
-                                              <p>{{ $balikNama->jawaban }}</p>
+                                        <div class="accordion-item  ">
+                                           <a style="color: black">{{ $balikNama->pertanyaan }}</a>
+                                           <div class="content  ">
+                                              <p style="color: black">{{ $balikNama->jawaban }}</p>
                                            </div>
                                         </div>
                                      @endforeach
@@ -141,10 +141,10 @@
                                   <div class="panel-body">
                                       <div class="accordion">
                                           @foreach($qnaGeser as $geser)
-                                              <div class="accordion-item">
-                                                  <a>{{ $geser->pertanyaan }}</a>
-                                                  <div class="content">
-                                                      <p>{{ $geser->jawaban }}</p>
+                                              <div class="accordion-item  ">
+                                                  <a style="color: black">{{ $geser->pertanyaan }}</a>
+                                                  <div class="content  ">
+                                                      <p style="color: black">{{ $geser->jawaban }}</p>
                                                   </div>
                                               </div>
                                           @endforeach

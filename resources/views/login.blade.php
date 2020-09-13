@@ -47,7 +47,7 @@
   <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
   <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-  <a class="btn btn-lg btn-primary btn-block" href="{{ URL::previous() }}" >Back</a>
+  <a class="btn btn-lg btn-primary btn-block" href="{{ route('get.index') }}" >Back</a>
   <p class="mt-5 mb-3 text-muted">&copy; ULP KRIAN 123</p>
 </form>
 </body>

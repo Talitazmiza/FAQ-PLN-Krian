@@ -149,9 +149,9 @@
                <div class="col-xs-10">
                   <div class="collapse navbar-collapse">
                      <ul class="nav navbar-nav">
-                        <li class="">
+                        {{-- <li class="">
                            <a href="{{ route ('get.login') }}">Admin</a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a href="{{ route('get.index') }}">Home</a>
                         </li>
@@ -184,9 +184,9 @@
                </div>
                <div class="collapse navbar-collapse" id="mobile-main-menu">
                   <ul class="nav navbar-nav">
-                      <li class="">
+                      {{-- <li class="">
                           <a href="{{ route ('get.login') }}">Admin</a>
-                      </li>
+                      </li> --}}
                       <li>
                           <a href="{{ route('get.index') }}">Home</a>
                       </li>
