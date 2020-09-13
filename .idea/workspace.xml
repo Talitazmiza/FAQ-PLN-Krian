@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62d853ff-e80f-414b-9b87-1dd22929abc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-    </list>
+    <list default="true" id="95477395-7a0f-4b04-a57b-ecbbc798e4c2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,14 +132,14 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talita\PhpstormProjects\new2" />
+      <recent name="C:\Users\talita\PhpstormProjects\new2\public\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\faq-krian_new" />
       <recent name="C:\xampp\htdocs\faq-krian_new\tests" />
       <recent name="C:\Users\talita\PhpstormProjects\new2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\talita\PhpstormProjects\new2" />
-      <recent name="C:\Users\talita\PhpstormProjects\new2\public\img" />
     </key>
   </component>
   <component name="RunManager">
