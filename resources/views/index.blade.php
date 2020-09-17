@@ -175,17 +175,7 @@
                            <i class="fa fa-search"></i>
                            </button>
                         </form>
-                        <ul class="nav navbar-nav language">
-                           <li class="text-right">
-                              <a class="padding-right-5 disabled" title="Bahasa"></a>
-                           </li>
-                           <li class="text-center">
-                              <div class="language-divider"></div>
-                           </li>
-                           <li class="text-left">
-                              <a class="padding-left-8" title="English" href="http://www.pln.co.id/eng"></a>
-                           </li>
-                        </ul>
+
                      </div>
                   </div> --}}
                </div>
@@ -222,15 +212,7 @@
                               <a type="button" style="width:45%; padding: 5px 5px 5px 5px;" class="btn btn-primary col-sm-6" href="http://www.pln.co.id/eng" title="English">EN</a>
                            </div>
                         </div>
-                     </li>
-                     <li><a href="/pelanggan/layanan-online">Pelanggan</a></li>
-                     <li><a href="/media/siaran-pers">Media</a></li>
-                     <li><a href="/stakeholder/laporan-keuangan">Hubungan Investor</a></li>
-                     <li><a href="/tentang-kami/profil-perusahaan">Tentang Kami</a></li>
-                     <li><a href="/pln-peduli/pln-peduli-index">PLN Peduli</a></li>
-                     <li><a href="/kip/layanan-informasi-publik">KIP</a></li>
-                     <li><a href="/karier/informasi-rekrutmen-pln">Karier</a></li>
-                     <li>
+
                         <form class="navbar-left" role="search" method="get" action="http://www.pln.co.id/search">
                            <div class="container row">
                               <div class="form-group col-md-10 colsm-10 col-xs-10">

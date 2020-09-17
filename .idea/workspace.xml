@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95477395-7a0f-4b04-a57b-ecbbc798e4c2" name="Default Changelist" comment="" />
+    <list default="true" id="95477395-7a0f-4b04-a57b-ecbbc798e4c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +156,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="62d853ff-e80f-414b-9b87-1dd22929abc0" name="Default Changelist" comment="" />
+      <changelist id="95477395-7a0f-4b04-a57b-ecbbc798e4c2" name="Default Changelist" comment="" />
       <created>1583050267029</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
