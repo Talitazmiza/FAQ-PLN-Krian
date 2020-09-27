@@ -129,29 +129,123 @@
                                </div>
                             </div>
                          </div>
-                          <div class="panel panel-default">
-                              <div class="panel-heading" role="tab" id="headingSix">
-                                  <h4 class="panel-title">
-                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                          <i class="fa fa-comment"></i>Geser Meter/Geser Tiang/Geser SR
-                                      </a>
-                                  </h4>
-                              </div>
-                              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                  <div class="panel-body">
-                                      <div class="accordion">
-                                          @foreach($qnaGeser as $geser)
-                                              <div class="accordion-item">
-                                                  <a>{{ $geser->pertanyaan }}</a>
-                                                  <div class="content">
-                                                      <p>{{ $geser->jawaban }}</p>
-                                                  </div>
-                                              </div>
-                                          @endforeach
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <i class="fa fa-comment"></i>Geser Meter/Geser Tiang/Geser SR
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <div class="accordion">
+                                        @foreach($qnaGeser as $geser)
+                                            <div class="accordion-item">
+                                                <a>{{ $geser->pertanyaan }}</a>
+                                                <div class="content">
+                                                    <p>{{ $geser->jawaban }}</p>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        <i class="fa fa-comment"></i>Video Alur
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                    <div class="accordion">
+                                            <div class="accordion-item">
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg1">Balik Nama</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Balik Nama.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg2">Geser</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Geser.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg3">Migrasi</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Migrasi.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg4">Pasang Baru</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Pasang Baru.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg5">Pesta</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Pesta.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg6">Tambah Daya</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Tambah Daya.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg7">Turun Daya</a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade bd-example-modal-lg7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content" style="align-content: center">
+                                                            <video width="900" height="500" controls loop autoplay>
+                                                                <source src="{{ url('/video/Turun Daya.mp4') }}">
+                                                            </video>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                    </div>
                 </div>
