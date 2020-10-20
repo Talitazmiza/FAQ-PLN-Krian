@@ -4,6 +4,7 @@
     $qnaPerubahanDaya = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Perubahan Daya')->get();
     $qnaBalikNama = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Balik Nama')->get();
     $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser')->get();
+      // $images = DB::table('upload')->select()
 ?>
 
 @extends('index')
@@ -32,9 +33,9 @@
                                       <div class="accordion">
                                           @foreach($qnaPasangBaru as $pasangBaru)
                                               <div class="accordion-item">
-                                                  <a>{{ $pasangBaru->pertanyaan }}</a>
+                                                  <a style="color : black">{{ $pasangBaru->pertanyaan }}</a>
                                                   <div class="content">
-                                                      <p>{{ $pasangBaru->jawaban }}</p>
+                                                      <p style="color : black"><pre>{{ $pasangBaru->jawaban }}</pre></p>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -55,9 +56,9 @@
                                       <div class="accordion">
                                           @foreach($qnaPerubahanDaya as $perubahanDaya)
                                               <div class="accordion-item">
-                                                  <a>{{ $perubahanDaya->pertanyaan }}</a>
+                                                  <a style="color : black">{{ $perubahanDaya->pertanyaan }}</a>
                                                   <div class="content">
-                                                      <p>{{ $perubahanDaya->jawaban }}</p>
+                                                      <p style="color : black">{{ $perubahanDaya->jawaban }}</p>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -78,9 +79,9 @@
                                       <div class="accordion">
                                           @foreach($qnaPesta as $pesta)
                                               <div class="accordion-item">
-                                                  <a>{{ $pesta->pertanyaan }}</a>
+                                                  <a style="color : black">{{ $pesta->pertanyaan }}</a>
                                                   <div class="content">
-                                                      <p>{{ $pesta->jawaban }}</p>
+                                                      <p style="color : black">{{ $pesta->jawaban }}</p>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -119,9 +120,9 @@
                                   <div class="accordion">
                                      @foreach($qnaBalikNama as $balikNama)
                                         <div class="accordion-item">
-                                           <a>{{ $balikNama->pertanyaan }}</a>
+                                           <a style="color : black">{{ $balikNama->pertanyaan }}</a>
                                            <div class="content">
-                                              <p>{{ $balikNama->jawaban }}</p>
+                                              <p style="color : black">{{ $balikNama->jawaban }}</p>
                                            </div>
                                         </div>
                                      @endforeach
@@ -142,9 +143,9 @@
                                     <div class="accordion">
                                         @foreach($qnaGeser as $geser)
                                             <div class="accordion-item">
-                                                <a>{{ $geser->pertanyaan }}</a>
+                                                <a style="color : black">{{ $geser->pertanyaan }}</a>
                                                 <div class="content">
-                                                    <p>{{ $geser->jawaban }}</p>
+                                                    <p style="color : black">{{ $geser->jawaban }}</p>
                                                 </div>
                                             </div>
                                         @endforeach
@@ -242,6 +243,22 @@
                                                         </div>
                                                     </div>
                                             </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingEight">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                        <i class="fa fa-comment"></i>Brosur
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                <div class="panel-body">
+                                    <div class="accordion">
+                                      
                                     </div>
                                 </div>
                             </div>

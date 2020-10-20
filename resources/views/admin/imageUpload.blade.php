@@ -1,15 +1,16 @@
 @extends('admin.index')
 
 @section('content')
-<!DOCTYPE html>
-<html>
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- References: https://github.com/fancyapps/fancyBox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <!-- call image_upload.css for showing image -->
+    <link rel="stylesheet" href="css/image_upload.css">
 
     <style type="text/css">
         .gallery
@@ -56,13 +57,13 @@
             <div class="col-md-2">
                 <strong>Jenis:</strong>
                 <select name="title" id="">
-                    <option value="Brosur 1">Brosur 1</option>
-                    <option value="Brosur 2">Brosur 2</option>
-                    <option value="Brosur 3">Brosur 3</option>
-                    <option value="Brosur 4">Brosur 4</option>
+                    <option value="Brousr Daftar Instalir Resmi">Brosur Daftar Instalir Resmi</option>
+                    <option value="Brosur PLN">Brosur PLN</option>
+                    <option value="Jasa SLO">Jasa SLO</option>
+                    <!-- <option value="Brosur 4">Brosur 4</option>
                     <option value="Brosur 5">Brosur 5</option>
                     <option value="SLO">SLO</option>
-                    <option value="IML">IML</option>
+                    <option value="IML">IML</option> -->
                 </select>
             </div>
                 <br><br><br>
@@ -75,29 +76,30 @@
                 <button type="submit" class="btn btn-success">Upload</button>
             </div>
         <!-- </div> -->
-    </form> 
-        <br><br><br>
-    <div class="row">
-    <div class='list-group gallery'>
-            @if($images->count())
-                @foreach($images as $image)
-                <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                    <a class="thumbnail fancybox" rel="ligthbox" href="/images/{{ $image->image }}">
-                        <img class="img-responsive" alt="" src="/images/{{ $image->image }}" />
-                        <div class='text-center'>
-                            <small class='text-muted'>{{ $image->title }}</small>
-                        </div> <!-- text-center / end -->
-                    </a>
-                    <form action="{{ route('delete.imageUpload',$image->id) }}" method="POST">
-                    <input type="hidden" name="_method" value="delete">
-                    {!! csrf_field() !!}
-                    <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
-                    </form>
-                </div> <!-- col-6 / end -->
-                @endforeach
-            @endif
-        </div> <!-- list-group / end -->
-    </div> <!-- row / end -->
+    </form>
+        <br>
+        <div class="row">
+          @if($images->count())
+              @foreach($images as $image)
+                <div class="column">
+                  <div class="card">
+                    <div class="container">
+                      <a class="thumbnail fancybox" rel="ligthbox" href="/images/{{ $image->image }}">
+                          <img class="img-responsive" alt="{{ $image->title }}" style="width:200px; height:300px;" src="/images/{{ $image->image }}" >
+                      </a>
+                    </div>
+                    <p style="padding-top: 10px">{{ $image->title }}</p>
+                    <div class="container">
+                      <form action="{{ route('delete.imageUpload',$image->id) }}" method="POST">
+                        <input type="hidden" name="_method" value="delete">
+                        {!! csrf_field() !!}
+                          <button type="submit" class="btn btn-danger center">Hapus</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              @endforeach
+          @endif
 </div> <!-- container / end -->
 </body>
 
@@ -109,6 +111,4 @@
         });
     });
 </script>
-
-</html>
 @endsection

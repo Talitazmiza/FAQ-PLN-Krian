@@ -139,6 +139,7 @@
          -o-transition: all 0.35s ease 0.15s;
          transition: all 0.35s ease 0.15s;
          }
+
       </style>
    </head>
    <body>
@@ -149,9 +150,6 @@
                <div class="col-xs-10">
                   <div class="collapse navbar-collapse">
                      <ul class="nav navbar-nav">
-                        <li class="">
-                           <a href="{{ route ('get.login') }}">Admin</a>
-                        </li>
                         <li>
                             <a href="{{ route('get.index') }}">Home</a>
                         </li>

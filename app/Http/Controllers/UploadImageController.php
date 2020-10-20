@@ -34,6 +34,11 @@ class UploadImageController extends Controller
     public function destroy ($id) {
         UploadImage::find($id)->delete();
 
-    	return back()->with('success','Image removed successfully.');	
+    	return back()->with('success','Image removed successfully.');
+    }
+
+    public function show () {
+      $images = UploadImage::get();
+      return view('showDataInfo', compact('images'));
     }
 }
