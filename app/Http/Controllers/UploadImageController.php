@@ -36,9 +36,4 @@ class UploadImageController extends Controller
 
     	return back()->with('success','Image removed successfully.');
     }
-
-    public function show () {
-      $images = UploadImage::get();
-      return view('showDataInfo', compact('images'));
-    }
 }

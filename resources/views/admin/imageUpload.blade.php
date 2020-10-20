@@ -56,8 +56,8 @@
         <!-- <div class="column"> -->
             <div class="col-md-2">
                 <strong>Jenis:</strong>
-                <select name="title" id="">
-                    <option value="Brousr Daftar Instalir Resmi">Brosur Daftar Instalir Resmi</option>
+                <select name="title">
+                    <option value="Brosur Daftar Instalir Resmi">Brosur Daftar Instalir Resmi</option>
                     <option value="Brosur PLN">Brosur PLN</option>
                     <option value="Jasa SLO">Jasa SLO</option>
                     <!-- <option value="Brosur 4">Brosur 4</option>

@@ -15,7 +15,7 @@ class CreateUploadImagesTable extends Migration
     {
         Schema::create('upload_images', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
+            $table->enum('title', array('Brosur Daftar Instalir Resmi', 'Brosur PLN', 'Jasa SLO'));
             $table->string('image');
             $table->timestamps();
         });

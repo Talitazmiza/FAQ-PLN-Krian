@@ -4,12 +4,16 @@
     $qnaPerubahanDaya = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Perubahan Daya')->get();
     $qnaBalikNama = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Balik Nama')->get();
     $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser')->get();
-      // $images = DB::table('upload')->select()
+    $brosur_Daftar_Instalir_Resmi = DB::table('upload_images')->select('title', 'image')->where('title', 'Brosur Daftar Instalir Resmi')->get();
+    $brosur_PLN = DB::table('upload_images')->select('title', 'image')->where('title', 'Brosur PLN')->get();
+    $Jasa_SLO = DB::table('upload_images')->select('title', 'image')->where('title', 'Jasa SLO')->get();
 ?>
+
 
 @extends('index')
 
 @section('content')
+
 <div class="section">
     <div class="container">
        <div class="row">
@@ -258,7 +262,49 @@
                             <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
                                 <div class="panel-body">
                                     <div class="accordion">
-                                      
+                                      @foreach($brosur_Daftar_Instalir_Resmi as $brosur1)
+                                        <div class="accordion-item">
+                                            <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg8">{{ $brosur1->title }}</a>
+                                                <!-- Modal -->
+                                                <div class="modal fade bd-example-modal-lg8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content" style="align-content: center">
+                                                      <img class="img-responsive" alt="{{ $brosur1->title }}" style="width:800px; height:1100px;" src="/images/{{ $brosur1->image }}" >
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                      @endforeach
+                                    </div>
+                                    <div class="accordion">
+                                      @foreach($brosur_PLN as $brosur2)
+                                        <div class="accordion-item">
+                                            <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg9">{{ $brosur2->title }}</a>
+                                                <!-- Modal -->
+                                                <div class="modal fade bd-example-modal-lg9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content" style="align-content: center">
+                                                      <img class="img-responsive" alt="{{ $brosur2->title }}" style="width:800px; height:1100px;" src="/images/{{ $brosur2->image }}" >
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                      @endforeach
+                                    </div>
+                                    <div class="accordion">
+                                      @foreach($Jasa_SLO as $brosur3)
+                                        <div class="accordion-item">
+                                            <a style="color: black" data-toggle="modal" data-target=".bd-example-modal-lg10">{{ $brosur3->title }}</a>
+                                                <!-- Modal -->
+                                                <div class="modal fade bd-example-modal-lg10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content" style="align-content: center">
+                                                      <img class="img-responsive" alt="{{ $brosur3->title }}" style="width:800px; height:1100px;" src="/images/{{ $brosur3->image }}" >
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                      @endforeach
                                     </div>
                                 </div>
                             </div>
