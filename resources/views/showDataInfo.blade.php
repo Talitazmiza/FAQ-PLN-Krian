@@ -4,6 +4,9 @@
     $qnaPerubahanDaya = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Perubahan Daya')->get();
     $qnaBalikNama = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Balik Nama')->get();
     $qnaGeser = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'Geser')->get();
+    $qnaSLO = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'SLO')->get();
+    $qnaIML = DB::table('qna')->select('pertanyaan', 'jawaban')->where('jenis', 'IML')->get();
+
     $brosur_Daftar_Instalir_Resmi = DB::table('upload_images')->select('title', 'image')->where('title', 'Brosur Daftar Instalir Resmi')->get();
     $brosur_PLN = DB::table('upload_images')->select('title', 'image')->where('title', 'Brosur PLN')->get();
     $Jasa_SLO = DB::table('upload_images')->select('title', 'image')->where('title', 'Jasa SLO')->get();
@@ -13,6 +16,14 @@
 @extends('index')
 
 @section('content')
+
+<style media="screen">
+  pre{
+    font-family:calibri,arial,sans-serif;
+    background-color: inherit; overflow-wrap: break-word;font-size: 16px; ; color: #000000;
+
+  }
+</style>
 
 <div class="section">
     <div class="container">
@@ -39,7 +50,7 @@
                                               <div class="accordion-item">
                                                   <a style="color : black">{{ $pasangBaru->pertanyaan }}</a>
                                                   <div class="content">
-                                                      <p style="color : black"><pre>{{ $pasangBaru->jawaban }}</pre></p>
+                                                      <pre>{{ $pasangBaru->jawaban }}</pre>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -62,7 +73,7 @@
                                               <div class="accordion-item">
                                                   <a style="color : black">{{ $perubahanDaya->pertanyaan }}</a>
                                                   <div class="content">
-                                                      <p style="color : black">{{ $perubahanDaya->jawaban }}</p>
+                                                      <pre>{{ $perubahanDaya->jawaban }}</pre>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -74,7 +85,7 @@
                               <div class="panel-heading" role="tab" id="headingThree">
                                   <h4 class="panel-title">
                                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          <i class="fa fa-comment"></i>Penyambungan Sementara
+                                          <i class="fa fa-comment"></i>Penyambungan Sementara (Pesta)
                                       </a>
                                   </h4>
                               </div>
@@ -85,7 +96,7 @@
                                               <div class="accordion-item">
                                                   <a style="color : black">{{ $pesta->pertanyaan }}</a>
                                                   <div class="content">
-                                                      <p style="color : black">{{ $pesta->jawaban }}</p>
+                                                      <pre>{{ $pesta->jawaban }}</pre>
                                                   </div>
                                               </div>
                                           @endforeach
@@ -97,16 +108,44 @@
                               <div class="panel-heading" role="tab" id="headingFour">
                                   <h4 class="panel-title">
                                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                          <i class="fa fa-comment"></i>SLO
+                                          <i class="fa fa-comment"></i>Sertifikat Laik Operasi (SLO)
                                       </a>
                                   </h4>
                               </div>
                               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                   <div class="panel-body">
                                       <div class="accordion">
-                                          <div class="accordion-item">
-                                              <a>Ilustrasi alur SLO</a>
-                                          </div>
+                                        @foreach($qnaSLO as $slo)
+                                            <div class="accordion-item">
+                                                <a style="color : black">{{ $slo->pertanyaan }}</a>
+                                                <div class="content">
+                                                    <pre>{{ $slo->jawaban }}</pre>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="headingNine">
+                                  <h4 class="panel-title">
+                                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                          <i class="fa fa-comment"></i>Instalasi Milik Pelanggan (IML)
+                                      </a>
+                                  </h4>
+                              </div>
+                              <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                  <div class="panel-body">
+                                      <div class="accordion">
+                                        @foreach($qnaIML as $iml)
+                                            <div class="accordion-item">
+                                                <a style="color : black">{{ $iml->pertanyaan }}</a>
+                                                <div class="content">
+                                                    <pre>{{ $iml->jawaban }}</pre>
+                                                </div>
+                                            </div>
+                                        @endforeach
                                       </div>
                                   </div>
                               </div>
@@ -126,7 +165,7 @@
                                         <div class="accordion-item">
                                            <a style="color : black">{{ $balikNama->pertanyaan }}</a>
                                            <div class="content">
-                                              <p style="color : black">{{ $balikNama->jawaban }}</p>
+                                             <pre>{{ $balikNama->jawaban }}</pre>
                                            </div>
                                         </div>
                                      @endforeach
@@ -149,7 +188,7 @@
                                             <div class="accordion-item">
                                                 <a style="color : black">{{ $geser->pertanyaan }}</a>
                                                 <div class="content">
-                                                    <p style="color : black">{{ $geser->jawaban }}</p>
+                                                  <pre>{{ $geser->jawaban }}</pre>
                                                 </div>
                                             </div>
                                         @endforeach

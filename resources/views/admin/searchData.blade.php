@@ -1,6 +1,13 @@
 @extends('admin.index', ['search' => $search])
 
 @section('content')
+<style media="screen">
+  pre{
+    font-family:calibri,arial,sans-serif;
+    background-color: inherit; overflow-wrap: break-word;font-size: 16px; ; color: #000000;
+    white-space: pre-wrap;
+  }
+</style>
     <table class="table table-striped border text-center">
         <thead>
             <tr>
@@ -14,8 +21,8 @@
             @foreach($search as $see)
                 <tr>
                     <td>{{$see->jenis}}</td>
-                    <td>{{$see->pertanyaan}}</td>
-                    <td>{{$see->jawaban}}</td>
+                    <td style="text-align:left;">{{$see->pertanyaan}}</td>
+                    <td style="text-align:left; width:60%;"><pre>{{ $see->jawaban }}</pre></p></td>
                     <td><a href="{{ route('qna.edit', $see->id) }}" class="btn btn-warning">Edit</a></td>
                     <td>
                         <form action="{{ route('qna.destroy', $see->id)}}" method="post">
@@ -29,5 +36,3 @@
         </tbody>
     </table>
 @endsection
-
-

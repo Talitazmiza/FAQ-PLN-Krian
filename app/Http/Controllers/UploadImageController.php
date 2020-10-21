@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\UploadImage;
+use Illuminate\Support\Facades\Storage;
+use File;
 
 class UploadImageController extends Controller
 {
@@ -34,6 +36,6 @@ class UploadImageController extends Controller
     public function destroy ($id) {
         UploadImage::find($id)->delete();
 
-    	return back()->with('success','Image removed successfully.');
+      return back()->with('success','Image removed successfully with id : .');
     }
 }

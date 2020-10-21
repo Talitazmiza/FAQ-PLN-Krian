@@ -6,6 +6,14 @@
 @extends('index', ['search' => $search])
 
 @section('content')
+<style media="screen">
+  pre{
+    font-family:calibri,arial,sans-serif;
+    background-color: inherit; overflow-wrap: break-word;font-size: 16px; ; color: #000000;
+
+  }
+</style>
+
 <div class="section">
     <div class="container">
        <div class="row">
@@ -24,7 +32,7 @@
                                             <div class="accordion-item">
                                                 <a style="color: black;"><b>{{ $see->pertanyaan }}</b> ({{ $see->jenis }})</a>
                                                 <div class="content">
-                                                <p style="color: black;">{{ $see->jawaban }}</p>
+                                                <pre>{{ $see->jawaban }}</pre>
                                                 </div>
                                             </div>
                                     </div>
